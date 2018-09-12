@@ -36,6 +36,7 @@ endlegend
 
 !define SystemBoundary(e_alias, e_label) rectangle "==e_label" <<system-boundary>> as e_alias
 !define Description(e_alias, e_label) title "==e_label" <<description>> as e_alias
+!define Note(e_alias, e_note) note "==e_note" <<post-it-note>> as e_alias
 
 ' Relationship
 ' ##################################
@@ -102,6 +103,14 @@ skinparam rectangle<<new-container>> {
 }
 
 skinparam rectangle<<system-boundary>> {
+    StereotypeFontColor SYSTEM_BG_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor SYSTEM_BG_COLOR
+    BorderColor #000000
+	RoundCorner 25
+}
+
+skinparam note<<post-it-note>> {
     StereotypeFontColor SYSTEM_BG_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor SYSTEM_BG_COLOR
