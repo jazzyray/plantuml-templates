@@ -96,9 +96,11 @@ endlegend
 
 !define Rel_(e_alias1, e_alias2, e_label, e_direction) e_alias1 e_direction e_alias2  : "==e_label"
 !define Rel_(e_alias1, e_alias2, e_label, e_techn, e_direction) e_alias1 e_direction e_alias2 : "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//"
+!define Rel_(e_alias1, e_alias2, e_label, e_protocol, e_port, e_description, e_resource, e_direction) e_alias1 e_direction e_alias2 : "//<size:TECHN_FONT_SIZE>[e_protocol]</size>//\n//<size:TECHN_FONT_SIZE>[e_port]</size>//\n\n\==e_description\n\n//<size:TECHN_FONT_SIZE>[e_resource]</size>//"
 
 !define Rel(e_from,e_to, e_label) Rel_(e_from,e_to, e_label, "-->")
 !define Rel(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "-->")
+!define Rel(e_from,e_to, e_label, e_protocol, e_port, e_description, e_resource) Rel_(e_from,e_to, e_label, e_protocol, e_port, e_description, e_resource, "-->")
 
 !define Rel_Back(e_to, e_from, e_label) Rel_(e_to, e_from, e_label, "<--")
 !define Rel_Back(e_to, e_from, e_label, e_techn) Rel_(e_to, e_from, e_label, e_techn, "<--")
