@@ -18,8 +18,6 @@
 
 !definelong LAYOUT_WITH_LEGEND
 legend right
-skinparam rectangleBorderThickness 4
-skinparam arrowThickness 2
 |= Key             |= |
 |<NEW_SYSTEM_LINE_COLOUR> | New system |
 |<EXISTING_SYSTEM_LINE_COLOUR> | Existing system |
