@@ -1,0 +1,57 @@
+@startuml(id=C4_Context)
+!define PERSON_BG_COLOR #FFFFFF
+!define SYSTEM_BG_COLOR #EEEBDC
+!define ELEMENT_FONT_COLOR #000000
+!define BOUNDARY_LINE_COLOUR #000000
+!define EXISTING_SYSTEM_LINE_COLOUR #9c2db7
+!define NEW_SYSTEM_LINE_COLOUR #186321
+
+!define Person(e_alias, e_label) actor "==e_label" <<actor>> as e_alias
+!define ExistingSystem(e_alias, e_label) rectangle "==e_label" <<existing-system>> as e_alias
+!define NewSystem(e_alias, e_label) rectangle "==e_label" <<new-system>> as e_alias
+!define SystemBoundary(e_alias, e_label) rectangle "==e_label" <<system-boundary>> as e_alias
+!define Description(e_alias, e_label) title "==e_label" <<description>> as e_alias
+
+skinparam rectangleBorderThickness 4
+skinparam arrowThickness 2
+
+skinparam Arrow {
+    Color #000000
+    FontColor #000000
+    FontSize 12
+}
+
+skinparam actor<<actor>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    BackgroundColor PERSON_BG_COLOR
+    BorderColor #000000
+}
+
+skinparam rectangle<<existing-system>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor CONTAINER_BG_COLOR
+    BorderColor EXISTING_SYSTEM_LINE_COLOUR
+}
+
+skinparam rectangle<<new-system>> {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor CONTAINER_BG_COLOR
+    BorderColor NEW_SYSTEM_LINE_COLOUR
+}
+
+skinparam rectangle<<system-boundary>> {
+    StereotypeFontColor SYSTEM_BG_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor SYSTEM_BG_COLOR
+    BorderColor #000000
+	RoundCorner 25
+}
+
+scale 1
+skinparam backgroundColor SYSTEM_BG_COLOR
+skinparam titleBorderThickness 2
+skinparam titleBorderColor black
+skinparam titleBackgroundColor white
+@enduml
