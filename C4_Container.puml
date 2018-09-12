@@ -10,6 +10,11 @@
 !define EXISTING_CONTAINER_LINE_COLOUR #9c2db7
 !define NEW_CONTAINER_LINE_COLOUR #186321
 
+' Style
+' ##################################
+
+!define TECHN_FONT_SIZE 12
+
 ' Layout
 ' ##################################
 
@@ -29,14 +34,13 @@ endlegend
 ' ##################################
 
 !define Person(e_alias, e_label) actor "==e_label" <<actor>> as e_alias
-!define NewContainer(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<new-container>> as e_alias
-!define NewContainer(e_alias, e_label, e_techn, e_descr) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<new-container>> as e_alias
-!define ExistingContainer(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existing-container>> as e_alias
-!define ExistingContainer(e_alias, e_label, e_techn, e_descr) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<existing-container>> as e_alias
+!define NewContainer(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define NewContainer(e_alias, e_label, e_techn, e_descr) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<newContainer>> as e_alias
+!define ExistingContainer(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define ExistingContainer(e_alias, e_label, e_techn, e_descr) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//\n\n e_descr" <<existingContainer>> as e_alias
 
-!define SystemBoundary(e_alias, e_label) rectangle "==e_label" <<system-boundary>> as e_alias
+!define SystemBoundary(e_alias, e_label) rectangle "==e_label" <<systemBoundary>> as e_alias
 !define Description(e_alias, e_label) title "==e_label" <<description>> as e_alias
-!define Note(e_alias, e_note) note "==e_note" <<post-it-note>> as e_alias
 
 ' Relationship
 ' ##################################
@@ -88,29 +92,21 @@ skinparam actor<<actor>> {
     BorderColor #000000
 }
 
-skinparam rectangle<<existing-container>> {
+skinparam rectangle<<existingContainer>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor CONTAINER_BG_COLOR
     BorderColor EXISTING_SYSTEM_LINE_COLOUR
 }
 
-skinparam rectangle<<new-container>> {
+skinparam rectangle<<newContainer>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor CONTAINER_BG_COLOR
     BorderColor NEW_SYSTEM_LINE_COLOUR
 }
 
-skinparam rectangle<<system-boundary>> {
-    StereotypeFontColor SYSTEM_BG_COLOR
-    FontColor ELEMENT_FONT_COLOR
-    BackgroundColor SYSTEM_BG_COLOR
-    BorderColor #000000
-	RoundCorner 25
-}
-
-skinparam note<<post-it-note>> {
+skinparam rectangle<<systemBoundary>> {
     StereotypeFontColor SYSTEM_BG_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor SYSTEM_BG_COLOR
