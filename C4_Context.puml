@@ -18,6 +18,8 @@
 
 !definelong LAYOUT_WITH_LEGEND
 legend right
+skinparam rectangleBorderThickness 4
+skinparam arrowThickness 2
 |= Key             |= |
 |<NEW_SYSTEM_LINE_COLOUR> | New system |
 |<EXISTING_SYSTEM_LINE_COLOUR> | Existing system |
@@ -71,12 +73,6 @@ endlegend
 !define Rel_R(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "-RIGHT->")
 !define Rel_Right(e_from,e_to, e_label) Rel_R(e_from,e_to, e_label)
 !define Rel_Right(e_from,e_to, e_label, e_techn) Rel_R(e_from,e_to, e_label, e_techn)
-
-
-
-
-skinparam rectangleBorderThickness 4
-skinparam arrowThickness 2
 
 skinparam Arrow {
     Color #000000
