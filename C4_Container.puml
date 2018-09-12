@@ -104,32 +104,46 @@ endlegend
 
 !define Rel_Back(e_to, e_from, e_label) Rel_(e_to, e_from, e_label, "<--")
 !define Rel_Back(e_to, e_from, e_label, e_techn) Rel_(e_to, e_from, e_label, e_techn, "<--")
+!define Rel_Back(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "<--")
 
 !define Rel_Neighbor(e_from,e_to, e_label) Rel_(e_from,e_to, e_label, "->")
 !define Rel_Neighbor(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "->")
+!define Rel_Neighbor(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "->")
 
 !define Rel_Back_Neighbor(e_to, e_from, e_label) Rel_(e_to, e_from, e_label, "<-")
 !define Rel_Back_Neighbor(e_to, e_from, e_label, e_techn) Rel_(e_to, e_from, e_label, e_techn, "<-")
+!define Rel_Back_Neighbor(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "<-")
 
 !define Rel_D(e_from,e_to, e_label) Rel_(e_from,e_to, e_label, "-DOWN->")
 !define Rel_D(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "-DOWN->")
+!define Rel_D(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "-DOWN->")
 !define Rel_Down(e_from,e_to, e_label) Rel_D(e_from,e_to, e_label)
 !define Rel_Down(e_from,e_to, e_label, e_techn) Rel_D(e_from,e_to, e_label, e_techn)
+!define Rel_Down(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_D(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth)
 
 !define Rel_U(e_from,e_to, e_label) Rel_(e_from,e_to, e_label, "-UP->")
 !define Rel_U(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "-UP->")
+!define Rel_U(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "-UP->")
 !define Rel_Up(e_from,e_to, e_label) Rel_U(e_from,e_to, e_label)
 !define Rel_Up(e_from,e_to, e_label, e_techn) Rel_U(e_from,e_to, e_label, e_techn)
+!define Rel_U(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_U(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth)
+
 
 !define Rel_L(e_from,e_to, e_label) Rel_(e_from,e_to, e_label, "-LEFT->")
 !define Rel_L(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "-LEFT->")
+!define Rel_L(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "-LEFT->")
 !define Rel_Left(e_from,e_to, e_label) Rel_L(e_from,e_to, e_label)
 !define Rel_Left(e_from,e_to, e_label, e_techn) Rel_L(e_from,e_to, e_label, e_techn)
+!define Rel_Left(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_L(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth)
+
 
 !define Rel_R(e_from,e_to, e_label) Rel_(e_from,e_to, e_label, "-RIGHT->")
 !define Rel_R(e_from,e_to, e_label, e_techn) Rel_(e_from,e_to, e_label, e_techn, "-RIGHT->")
+!define Rel_R(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth, "-RIGHT->")
 !define Rel_Right(e_from,e_to, e_label) Rel_R(e_from,e_to, e_label)
 !define Rel_Right(e_from,e_to, e_label, e_techn) Rel_R(e_from,e_to, e_label, e_techn)
+!define Rel_Right(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth) Rel_R(e_from, e_to, e_label, e_protocol, e_port, e_resource, e_auth)
+
 
 
 @enduml
