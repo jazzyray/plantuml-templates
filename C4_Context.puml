@@ -109,9 +109,10 @@ skinparam rectangle<<system-boundary>> {
 skinparam rectangle<<note>> {
     StereotypeFontColor SYSTEM_BG_COLOR
     FontColor ELEMENT_FONT_COLOR
-    BackgroundColor SYSTEM_BG_COLOR
+    BackgroundColor #efeee8
     BorderColor #000000
-	RoundCorner 25
+	FontColor #000000
+    FontSize 10
 }
 
 scale 1
