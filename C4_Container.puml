@@ -91,8 +91,13 @@ endlegend
 !define SystemBoundary(e_alias, e_label) rectangle "==e_label" <<systemBoundary>> as e_alias
 !define Description(e_alias, e_label) title "==e_label" <<description>> as e_alias
 
+' Rectangles with Images
+!define NewAzureSubscription(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure.png>\r ==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingAzureSubscription(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure.png>\r ==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewAzureBlobStorage(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-blob-storage.png>\r ==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingAzureBlobStorage(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure=blob-storage.png>\r ==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 
-!define NewAzureSubscription(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/cloud_disaster_red.png>\r ==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+
 
 ' Relationship
 ' ##################################
