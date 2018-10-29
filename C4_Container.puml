@@ -95,8 +95,13 @@ endlegend
 !define NewAzureSubscription(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
 !define ExistingAzureSubscription(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 !define NewAzureBlobStorage(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-blob-storage.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
-!define ExistingAzureBlobStorage(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure=blob-storage.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
-
+!define ExistingAzureBlobStorage(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-blob-storage.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewGraphDb(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/graphdb.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingGraphDb(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/graphdb.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewElastic(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/elastic.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingElastic(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/elastic.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewAzureVm(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-vm.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingAzureVm(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-vm.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 
 
 ' Relationship
