@@ -92,7 +92,7 @@ endlegend
 !define Description(e_alias, e_label) title "==e_label" <<description>> as e_alias
 
 
-!define NewAzureSubscription(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//<img:=/icons/cloud_disaster_red.png>//" <<newContainer>> as e_alias
+!define NewAzureSubscription(e_alias, e_label, e_techn) rectangle "==e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//<img:=https://github.com/jazzyray/plantuml-templates/blob/master/icons/cloud_disaster_red.png>//" <<newContainer>> as e_alias
 
 ' Relationship
 ' ##################################
