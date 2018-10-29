@@ -110,6 +110,10 @@ endlegend
 !define ExistingAzureASE(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-ase.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 !define NewJavaFunction(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-java-function.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
 !define ExistingJavaFunction(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-java-function.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewAzureApiManagement(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-api-management.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingAzureApiManagement(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-api-management.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewSpringBootJava(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/spring-boot-java.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingSpringBootJava(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/spring-boot-java.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 
 
 ' Relationship
