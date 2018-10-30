@@ -129,6 +129,7 @@ endlegend
 !define NewAWSALB(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-alb.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
 !define ExistingAWSALB(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-alb.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 !define NewAWSBatch(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-batch.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+
 !define ExistingAWSBatch(e_alias,LB e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-batch.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 !define NewAWSECS(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-ecs.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
 !define ExistingAWSECS(e_alias,LB e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-ecs.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
