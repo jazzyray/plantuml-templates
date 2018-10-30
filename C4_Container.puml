@@ -138,7 +138,7 @@ endlegend
 !define ExistingAWSOracleRDS(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-oracle-rds.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 !define NewAWSRedHatEcsContainer(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-red-hat-ecs-container.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
 !define ExistingAWSRedHatEcsContainer(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws-red-hat-ecs-container.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
-!define NewPython(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/python.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define NewPython(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/python.png>\r e_label\n<size:TECHN_FONT_SIZE>[e_techn]</size>" <<newContainer>> as e_alias
 !define ExistingPython(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/python.png.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 
 
