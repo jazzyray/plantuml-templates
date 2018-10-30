@@ -17,7 +17,7 @@
 
 scale 1
 skinparam defaultTextAlignment center
-skinparam wrapWidth 200
+skinparam wrapWidth 300
 skinparam maxMessageSize 150
 skinparam backgroundColor SYSTEM_BG_COLOR
 skinparam titleBorderThickness 2
