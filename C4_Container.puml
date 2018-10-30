@@ -114,6 +114,11 @@ endlegend
 !define ExistingAzureApiManagement(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/azure-api-management.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 !define NewSpringBootJava(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/spring-boot-java.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
 !define ExistingSpringBootJava(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/spring-boot-java.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+!define NewKubernetes(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/kubernetes.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingKubernetes(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/kubernetes.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
+
+!define NewAWS(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<newContainer>> as e_alias
+!define ExistingAWS(e_alias, e_label, e_techn) rectangle "<img:https://raw.githubusercontent.com/jazzyray/plantuml-templates/master/icons/aws.png>\r e_label\n//<size:TECHN_FONT_SIZE>[e_techn]</size>//" <<existingContainer>> as e_alias
 
 
 ' Relationship
